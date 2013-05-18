@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+    
+    
+  <CurrentConfigs><Project>driverlib/Debug</Project><Project>nrf2401_8962/Debug</Project></CurrentConfigs><CurrentProj>nrf2401_8962</CurrentProj><OverviewSelected>1</OverviewSelected></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>189</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1155</ColumnWidth1><ColumnWidth2>308</ColumnWidth2><ColumnWidth3>77</ColumnWidth3></Build>
+      <TerminalIO/>
+      <Disassembly>
+        <MixedMode>1</MixedMode>
+        <CodeCovShow>1</CodeCovShow>
+        <InstrProfShow>1</InstrProfShow>
+      </Disassembly>
+    </Static>
+    <Windows>
+      
+      
+    <Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-28817-8255</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>&lt;ws></ExpandedNode><ExpandedNode>&lt;ws>/driverlib</ExpandedNode><ExpandedNode>&lt;ws>/nrf2401_8962</ExpandedNode><ExpandedNode>&lt;ws>/nrf2401_8962/library</ExpandedNode><ExpandedNode>&lt;ws>/nrf2401_8962/source</ExpandedNode><ExpandedNode>&lt;ws>/nrf2401_8962/thirdparty</ExpandedNode><ExpandedNode>nrf2401_8962</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd3>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-24468-8951</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd3></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\nrf2401_8962.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>1047</SelStart><SelEnd>1047</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\thirdparty\uartstdio.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\ds18b20.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\startup_ewarm.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\driverlib\sysctl.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\driverlib\adc.c</Filename><XPos>0</XPos><YPos>16</YPos><SelStart>1339</SelStart><SelEnd>1339</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\driverlib\interrupt.c</Filename><XPos>0</XPos><YPos>94</YPos><SelStart>4093</SelStart><SelEnd>4093</SelEnd></Tab><ActiveTab>6</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-012ea168><key>iaridepm.enu1</key></Toolbar-012ea168></Sizes></Row0></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>480</Bottom><Right>263</Right><x>-2</x><y>-2</y><xscreen>180</xscreen><yscreen>152</yscreen><sizeHorzCX>125000</sizeHorzCX><sizeHorzCY>182692</sizeHorzCY><sizeVertCX>184028</sizeVertCX><sizeVertCY>579327</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>307</Bottom><Right>1442</Right><x>-2</x><y>-2</y><xscreen>1444</xscreen><yscreen>309</yscreen><sizeHorzCX>1002778</sizeHorzCX><sizeHorzCY>371394</sizeHorzCY><sizeVertCX>125000</sizeVertCX><sizeVertCY>182692</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

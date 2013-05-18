@@ -1,0 +1,294 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V6.10.2.52244/W32 for ARM              13/May/2013  15:19:56 #
+# Copyright 2007-2010 IAR Systems AB.                                         #
+#                                                                             #
+#    Output file  =  E:\Document\chip\nrf24\nrf2401_8962\Debug\Exe\nrf24_8962 #
+#                    .out                                                     #
+#    Map file     =  E:\Document\chip\nrf24\nrf2401_8962\Debug\List\nrf24_896 #
+#                    2.map                                                    #
+#    Command line =  E:\Document\chip\nrf24\nrf2401_8962\Debug\Obj\ds18b20.o  #
+#                    E:\Document\chip\nrf24\nrf2401_8962\Debug\Obj\lib_spi.o  #
+#                    E:\Document\chip\nrf24\nrf2401_8962\Debug\Obj\nrf2401_89 #
+#                    62.o E:\Document\chip\nrf24\nrf2401_8962\Debug\Obj\nrf24 #
+#                    l01.o E:\Document\chip\nrf24\nrf2401_8962\Debug\Obj\rfox #
+#                    m2m.o E:\Document\chip\nrf24\nrf2401_8962\Debug\Obj\rit1 #
+#                    28x96x4.o E:\Document\chip\nrf24\nrf2401_8962\Debug\Obj\ #
+#                    startup_ewarm.o E:\Document\chip\nrf24\nrf2401_8962\Debu #
+#                    g\Obj\uartstdio.o E:\Document\chip\nrf24\nrf2401_8962\De #
+#                    bug\Obj\ustdlib.o E:\Document\chip\nrf24\nrf2401_8962\dr #
+#                    iverlib\ewarm\Exe\driverlib.a -o                         #
+#                    E:\Document\chip\nrf24\nrf2401_8962\Debug\Exe\nrf24_8962 #
+#                    .out --map E:\Document\chip\nrf24\nrf2401_8962\Debug\Lis #
+#                    t\nrf24_8962.map --config E:\Document\chip\nrf24\nrf2401 #
+#                    _8962\nrf24_8962.icf --semihosting --entry               #
+#                    __iar_program_start                                      #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at start of [0x00000000-0x0003ffff] { ro section .intvec };
+"P1":  place in [from 0x00000000 to 0x0003ffff] { ro };
+"P2":  place in [from 0x20000000 to 0x2000ffff] { rw, block HEAP };
+
+  Section          Kind        Address    Size  Object
+  -------          ----        -------    ----  ------
+"A1":                                     0xf0
+  .intvec          const    0x00000000    0xf0  startup_ewarm.o [1]
+                          - 0x000000f0    0xf0
+
+"P1":                                   0x1448
+  .text            ro code  0x000000f0   0x574  nrf24l01.o [1]
+  .text            ro code  0x00000664    0xcc  lib_spi.o [1]
+  .text            ro code  0x00000730   0x398  sysctl.o [4]
+  .text            ro code  0x00000ac8   0x1fc  gpio.o [4]
+  .text            ro code  0x00000cc4    0x74  interrupt.o [4]
+  .text            ro code  0x00000d38    0x86  ssi.o [4]
+  .text            ro code  0x00000dbe    0x22  zero_init3.o [5]
+  .text            ro code  0x00000de0     0x8  cpu.o [4]
+  .text            ro code  0x00000de8   0x264  uartstdio.o [1]
+  .text            ro code  0x0000104c    0x94  uart.o [4]
+  .text            ro code  0x000010e0   0x1ae  ds18b20.o [1]
+  .text            ro code  0x0000128e     0x6  startup_ewarm.o [1]
+  .text            ro code  0x00001294   0x130  nrf2401_8962.o [1]
+  .text            ro code  0x000013c4    0x28  systick.o [4]
+  .text            ro code  0x000013ec    0x2e  rfoxm2m.o [1]
+  .text            ro code  0x0000141a    0x14  rfoxm2m.o [1]
+  .text            ro code  0x00001430    0x66  ABImemset.o [5]
+  .text            ro code  0x00001498    0x2c  data_init3.o [5]
+  .iar.init_table  const    0x000014c4    0x10  - Linker created -
+  .text            ro code  0x000014d4    0x16  cmain.o [5]
+  .text            ro code  0x000014ea     0x4  low_level_init.o [3]
+  .text            ro code  0x000014ee     0x8  exit.o [3]
+  .text            ro code  0x000014f8     0xa  cexit.o [5]
+  .text            ro code  0x00001504    0x14  exit.o [6]
+  .rodata          const    0x00001518    0x14  uartstdio.o [1]
+  .text            ro code  0x0000152c     0xc  cstartup_M.o [5]
+                          - 0x00001538  0x1448
+
+"P2", part 1 of 2:                        0x7c
+  .bss             zero     0x20000000    0x20  nrf24l01.o [1]
+  .bss             zero     0x20000020    0x20  nrf24l01.o [1]
+  .bss             zero     0x20000040     0x8  nrf24l01.o [1]
+  .bss             zero     0x20000048     0x8  nrf24l01.o [1]
+  .bss             zero     0x20000050     0x8  nrf24l01.o [1]
+  .bss             zero     0x20000058     0x8  nrf24l01.o [1]
+  .bss             zero     0x20000060     0x8  nrf24l01.o [1]
+  .bss             zero     0x20000068     0x8  nrf24l01.o [1]
+  .bss             zero     0x20000070     0x4  nrf2401_8962.o [1]
+  .bss             zero     0x20000074     0x4  uartstdio.o [1]
+  .bss             zero     0x20000078     0x1  nrf24l01.o [1]
+  .bss             zero     0x20000079     0x1  nrf24l01.o [1]
+  .bss             zero     0x2000007a     0x1  nrf24l01.o [1]
+                          - 0x2000007b    0x7b
+
+"P2", part 2 of 2:                       0x100
+  .noinit          uninit   0x2000007c   0x100  startup_ewarm.o [1]
+                          - 0x2000017c   0x100
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x7b:
+          0x20000000  0x7b
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  ro data  rw data
+    ------            -------  -------  -------
+E:\Document\chip\nrf24\nrf2401_8962\Debug\Obj: [1]
+    ds18b20.o             430
+    lib_spi.o             204
+    nrf2401_8962.o        304                 4
+    nrf24l01.o          1 396               115
+    rfoxm2m.o              66
+    startup_ewarm.o         6      240      256
+    uartstdio.o           612       20        4
+    -------------------------------------------
+    Total:              3 018      260      379
+
+command line: [2]
+    -------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    exit.o                  8
+    low_level_init.o        4
+    -------------------------------------------
+    Total:                 12
+
+driverlib.a: [4]
+    cpu.o                   8
+    gpio.o                508
+    interrupt.o           116
+    ssi.o                 134
+    sysctl.o              920
+    systick.o              40
+    uart.o                148
+    -------------------------------------------
+    Total:              1 874
+
+rt7M_tl.a: [5]
+    ABImemset.o           102
+    cexit.o                10
+    cmain.o                22
+    cstartup_M.o           12
+    data_init3.o           44
+    zero_init3.o           34
+    -------------------------------------------
+    Total:                224
+
+shb_l.a: [6]
+    exit.o                 20
+    -------------------------------------------
+    Total:                 20
+
+    Gaps                    8
+    Linker created                  16
+-----------------------------------------------
+    Grand Total:        5 156      276      379
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+?main                   0x000014d5         Code  Gb  cmain.o [5]
+CPUcpsie                0x00000de1    0x8  Code  Gb  cpu.o [4]
+FaultISR                0x00001291    0x2  Code  Lc  startup_ewarm.o [1]
+GPIODirModeSet          0x00000ac9   0x28  Code  Gb  gpio.o [4]
+GPIOIntTypeSet          0x00000af1   0x38  Code  Gb  gpio.o [4]
+GPIOPadConfigSet        0x00000b29   0x98  Code  Gb  gpio.o [4]
+GPIOPinConfigure        0x00000c35   0x40  Code  Gb  gpio.o [4]
+GPIOPinIntClear         0x00000bdd    0x6  Code  Gb  gpio.o [4]
+GPIOPinIntEnable        0x00000bc1    0xc  Code  Gb  gpio.o [4]
+GPIOPinIntStatus        0x00000bcd   0x10  Code  Gb  gpio.o [4]
+GPIOPinTypeGPIOInput    0x00000bf7   0x10  Code  Gb  gpio.o [4]
+GPIOPinTypeGPIOOutput   0x00000c07    0xa  Code  Gb  gpio.o [4]
+GPIOPinTypeSSI          0x00000c19    0xa  Code  Gb  gpio.o [4]
+GPIOPinTypeUART         0x00000c2b    0xa  Code  Gb  gpio.o [4]
+GPIOPinWrite            0x00000be3    0x6  Code  Gb  gpio.o [4]
+InitConsole             0x00001295   0x28  Code  Gb  nrf2401_8962.o [1]
+IntDefaultHandler       0x00001293    0x2  Code  Lc  startup_ewarm.o [1]
+IntEnable               0x00000ccf   0x4e  Code  Gb  interrupt.o [4]
+IntMasterEnable         0x00000cc5    0xa  Code  Gb  interrupt.o [4]
+NmiSR                   0x0000128f    0x2  Code  Lc  startup_ewarm.o [1]
+Region$$Table$$Base     0x000014c4          --   Gb  - Linker created -
+Region$$Table$$Limit    0x000014d4          --   Gb  - Linker created -
+SPI_spi0_master_init    0x000006cf   0x52  Code  Gb  lib_spi.o [1]
+SPI_spi0_xfer           0x00000665   0x6a  Code  Gb  lib_spi.o [1]
+SSIBusy                 0x00000db3    0xc  Code  Gb  ssi.o [4]
+SSIConfigSetExpClk      0x00000d39   0x46  Code  Gb  ssi.o [4]
+SSIDataGet              0x00000d95    0xc  Code  Gb  ssi.o [4]
+SSIDataGetNonBlocking   0x00000da1   0x12  Code  Gb  ssi.o [4]
+SSIDataPut              0x00000d8b    0xa  Code  Gb  ssi.o [4]
+SSIEnable               0x00000d7f    0xc  Code  Gb  ssi.o [4]
+SysCtlClockGet          0x000008a3  0x160  Code  Gb  sysctl.o [4]
+SysCtlClockSet          0x00000795  0x10e  Code  Gb  sysctl.o [4]
+SysCtlDelay             0x0000078d    0x8  Code  Gb  sysctl.o [4]
+SysCtlPeripheralEnable  0x0000076b    0x8  Code  Gb  sysctl.o [4]
+SysCtlPeripheralPresent
+                        0x00000731   0x3a  Code  Gb  sysctl.o [4]
+SysTickEnable           0x000013c5    0xc  Code  Gb  systick.o [4]
+SysTickIntEnable        0x000013d1    0xc  Code  Gb  systick.o [4]
+SysTickIntHandler       0x000012bd    0xc  Code  Gb  nrf2401_8962.o [1]
+SysTickPeriodSet        0x000013dd    0x8  Code  Gb  systick.o [4]
+UARTCharPut             0x000010d1    0xa  Code  Gb  uart.o [4]
+UARTConfigSetExpClk     0x0000104d   0x4c  Code  Gb  uart.o [4]
+UARTDisable             0x000010b3   0x1e  Code  Gb  uart.o [4]
+UARTEnable              0x00001099   0x1a  Code  Gb  uart.o [4]
+UARTStdioInit           0x00000de9    0xc  Code  Gb  uartstdio.o [1]
+UARTStdioInitExpClk     0x00000df5   0x4a  Code  Gb  uartstdio.o [1]
+UARTprintf              0x00000e6d  0x1b2  Code  Gb  uartstdio.o [1]
+UARTwrite               0x00000e3f   0x2e  Code  Gb  uartstdio.o [1]
+__aeabi_memset          0x00001431         Code  Gb  ABImemset.o [5]
+__cmain                 0x000014d5         Code  Gb  cmain.o [5]
+__exit                  0x00001505   0x14  Code  Gb  exit.o [6]
+__iar_Memset            0x00001431         Code  Gb  ABImemset.o [5]
+__iar_Memset_word       0x00001439         Code  Gb  ABImemset.o [5]
+__iar_data_init3        0x00001499   0x2c  Code  Gb  data_init3.o [5]
+__iar_program_start     0x0000152d         Code  Gb  cstartup_M.o [5]
+__iar_zero_init3        0x00000dbf   0x22  Code  Gb  zero_init3.o [5]
+__low_level_init        0x000014eb    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x00000000   0xf0  Data  Gb  startup_ewarm.o [1]
+_call_main              0x000014e1         Code  Gb  cmain.o [5]
+_exit                   0x000014f9         Code  Gb  cexit.o [5]
+_main                   0x000014e7         Code  Gb  cmain.o [5]
+ds18b20_read_temp       0x00001221   0x6e  Code  Gb  ds18b20.o [1]
+exit                    0x000014ef    0x8  Code  Gb  exit.o [3]
+g_pcHex                 0x00001030    0x4  Data  Lc  uartstdio.o [1]
+g_pulDCRegs             0x00000a50   0x10  Data  Lc  sysctl.o [4]
+g_pulGPIOBaseAddrs      0x00000c7c   0x48  Data  Lc  gpio.o [4]
+g_pulRCGCRegs           0x00000a60    0xc  Data  Lc  sysctl.o [4]
+g_pulXtals              0x00000a6c   0x5c  Data  Lc  sysctl.o [4]
+g_ulBase                0x20000074    0x4  Data  Lc  uartstdio.o [1]
+g_ulUARTBase            0x00001034    0xc  Data  Lc  uartstdio.o [1]
+g_ulUARTPeriph          0x00001040    0xc  Data  Lc  uartstdio.o [1]
+main                    0x000012c9   0xa8  Code  Gb  nrf2401_8962.o [1]
+memset                  0x0000141b   0x14  Code  Gb  rfoxm2m.o [1]
+nrf24_baud              0x20000079    0x1  Data  Gb  nrf24l01.o [1]
+nrf24_flag              0x2000007a    0x1  Data  Gb  nrf24l01.o [1]
+nrf24_pipe              0x20000078    0x1  Data  Gb  nrf24l01.o [1]
+nrf24l01_ce             0x000001fb   0x24  Code  Gb  nrf24l01.o [1]
+nrf24l01_csn            0x0000021f   0x24  Code  Gb  nrf24l01.o [1]
+nrf24l01_init           0x000000f1   0x64  Code  Gb  nrf24l01.o [1]
+nrf24l01_irq            0x00000155   0xa6  Code  Gb  nrf24l01.o [1]
+nrf24l01_prx            0x00000483  0x1ac  Code  Gb  nrf24l01.o [1]
+nrf24l01_ptx            0x0000035b  0x128  Code  Gb  nrf24l01.o [1]
+nrf24l01_r_reg          0x00000243   0x22  Code  Gb  nrf24l01.o [1]
+nrf24l01_read_data      0x00000335   0x26  Code  Gb  nrf24l01.o [1]
+nrf24l01_w_reg          0x00000265   0x40  Code  Gb  nrf24l01.o [1]
+nrf24l01_write_data     0x000002a5   0x90  Code  Gb  nrf24l01.o [1]
+pulStack                0x2000007c  0x100  Data  Lc  startup_ewarm.o [1]
+rfox_tlv_clr            0x000013ed    0xc  Code  Gb  rfoxm2m.o [1]
+rfox_tlv_set            0x000013f9   0x22  Code  Gb  rfoxm2m.o [1]
+rx_buf                  0x20000000   0x20  Data  Gb  nrf24l01.o [1]
+sys_tick                0x20000070    0x4  Data  Gb  nrf2401_8962.o [1]
+tx_addr0                0x20000040    0x8  Data  Gb  nrf24l01.o [1]
+tx_addr1                0x20000048    0x8  Data  Gb  nrf24l01.o [1]
+tx_addr2                0x20000050    0x8  Data  Gb  nrf24l01.o [1]
+tx_addr3                0x20000058    0x8  Data  Gb  nrf24l01.o [1]
+tx_addr4                0x20000060    0x8  Data  Gb  nrf24l01.o [1]
+tx_addr5                0x20000068    0x8  Data  Gb  nrf24l01.o [1]
+tx_buf                  0x20000020   0x20  Data  Gb  nrf24l01.o [1]
+w1_init                 0x000010e1   0x12  Code  Gb  ds18b20.o [1]
+w1_readbyte             0x000011b7   0x5a  Code  Gb  ds18b20.o [1]
+w1_reset                0x000010f3   0x58  Code  Gb  ds18b20.o [1]
+w1_writebyte            0x0000114b   0x6c  Code  Gb  ds18b20.o [1]
+
+
+[1] = E:\Document\chip\nrf24\nrf2401_8962\Debug\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = driverlib.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+  5 156 bytes of readonly  code memory
+    276 bytes of readonly  data memory
+    379 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

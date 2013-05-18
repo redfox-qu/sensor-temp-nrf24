@@ -1,0 +1,12 @@
+﻿2013-5-9
+硬件接口：
+    NRF24   8962        811
+-----------------------------------
+1   GND     GND     10  GND     24
+2   VCC     VCC     12  VCC     22
+3   CE      PC5     13  PC6     26
+4   CSN     SSI0FSS 11  SSIFSS  32
+5   SCK     SSI0CLK 7   SSICLK  31
+6   MOSI    SSI0TX  4   SSITX   34
+7   MISO    SSI0RX  5   SSIRX   33
+8   IRQ     PC7     15  PC7     25
